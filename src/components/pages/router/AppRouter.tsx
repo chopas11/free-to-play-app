@@ -1,16 +1,16 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
-// import {routes} from "./routes"
-import Main from "../components/pages/Main/Main";
-import Game from "../components/pages/Game/Game";
+import Main from "../Main/Main";
+import Game from "../Game/Game";
 
-const AppRouter = () => {
+
+const AppRouter: React.FC= (props) => {
     return (
             <Routes>
                 {/*{routes.map(({path, Component}) =>*/}
                 <Route path={'/'} element={<Main/>}/>
-                <Route path={'/game/:id'} element={<Game/>}/>
-                {/*)}*/}
+                <Route path={'/game/:id'} element={<Game />}/>
+                {/*<Route path={'/'}>*/}
             </Routes>
     );
 };

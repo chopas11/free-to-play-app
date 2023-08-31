@@ -1,0 +1,9 @@
+
+.game__params {
+    display: grid;
+}
+
+.game__params__item span {
+    color: var(--span-color);
+    font-size: 16px;
+}

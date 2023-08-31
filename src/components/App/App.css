@@ -1,0 +1,76 @@
+
+/*Variables*/
+html {
+  --accent-color: #4799eb;
+  --background-color: #272b30;
+  --text-color: #aaaaaa;
+  --span-color: #718288;
+  --divider-color: #212224;
+}
+
+/*Fonts*/
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../assets/fonts/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../assets/fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+/*Settings*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}

@@ -1,0 +1,6 @@
+
+.header {
+    border-bottom: 1px solid var(--divider-color);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}

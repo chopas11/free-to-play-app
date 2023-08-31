@@ -1,0 +1,26 @@
+
+.card {
+    background: #32383e;
+    border-radius: 5px;
+}
+
+.card__img {
+    border-radius: 5px;
+    width: 100%;
+}
+.card__description {
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    /*margin: auto;*/
+}
+.card__description__name {
+    font-size: 1rem;
+}
+
+.card__description__genre {
+    background: #7a8288;
+    color: var(--background-color);
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 1px 3px;
+}

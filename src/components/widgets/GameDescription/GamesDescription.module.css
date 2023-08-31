@@ -1,0 +1,11 @@
+
+.games__description {
+    padding-left: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .games__description {
+        padding-left: 0;
+    }
+}
