@@ -12,7 +12,7 @@ interface GameScreenshotsProps {
 const GameScreenshots: React.FC<GameScreenshotsProps> = ({screenshots}) => {
     return (
         <Carousel>
-            { screenshots ? screenshots.map(item => <div><img className={s.screenshot} src={item.image} alt="" /></div>) : <Error />}
+            { screenshots ? screenshots.map(item => <div key={item.id}><img className={s.screenshot} src={item.image} alt="" /></div>) : <Error />}
         </Carousel>
     );
 };

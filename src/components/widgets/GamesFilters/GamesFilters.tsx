@@ -15,7 +15,7 @@ const GamesFilters: React.FC<GamesFiltersProps> = ({callbacks}) => {
         { value: 'browser', label: 'Browser (Web)' },
     ];
     const genreOptions = [
-        { value: 'all', label: 'All Genres' },
+        { value: '', label: 'All Genres' },
         { value: 'MMORPG', label: 'MMO' },
         { value: 'shooter', label: 'Shooter' },
         { value: 'Strategy', label: 'Strategy' },
@@ -29,9 +29,9 @@ const GamesFilters: React.FC<GamesFiltersProps> = ({callbacks}) => {
 
     return (
         <div className={s.filters}>
-            <MySelect title="Platform:" callback={callbacks[0]} options={platformOptions} />
-            <MySelect title="Genre/Tag:" callback={callbacks[1]} options={genreOptions} />
-            <MySelect title="Sort By:" callback={callbacks[2]} options={sortOptions} />
+            <MySelect title="Platform:" callback={callbacks[1]} options={platformOptions} />
+            <MySelect title="Genre/Tag:" callback={callbacks[2]} options={genreOptions} />
+            <MySelect title="Sort By:" callback={callbacks[0]} options={sortOptions} />
         </div>
     );
 };

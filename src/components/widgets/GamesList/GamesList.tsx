@@ -10,6 +10,13 @@ const GamesList: React.FC = () => {
 
     const {games, error, loading} = useTypedSelector(state => state.main)
 
+    // Events
+    // const GamesListScroll = (e: React.UIEvent<HTMLElement>) => {
+    //     // if (e.currentTarget.scrollTop + e.currentTarget.clientHeight + 100 >= e.currentTarget.scrollHeight) {
+    //         console.log("Da");
+    //     // }
+    // }
+
     return (
         <div className={s.list}>
 
@@ -18,7 +25,7 @@ const GamesList: React.FC = () => {
             {games ?
                 games.map(item => {
                     return (
-                        <GameCard game={item}/>
+                        <GameCard key={item.id} game={item}/>
                     )
                 })
                 : ''}

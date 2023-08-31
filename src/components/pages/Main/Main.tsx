@@ -11,7 +11,7 @@ const Main: React.FC= (props) => {
 
     // Data
     const [sort, setSort] = useState('popularity');
-    const [platform, setPlatform] = useState('all');
+    const [platform, setPlatform] = useState('browser');
     const [genre, setGenre] = useState('');
 
     // Вызов action-creator для списка игр

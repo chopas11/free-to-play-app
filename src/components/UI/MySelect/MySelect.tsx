@@ -19,7 +19,7 @@ const MySelect: React.FC<MySelectProps> = (props) => {
         <div className={s.select__div}>
             {props.title}
             <Select
-                defaultValue="all"
+                defaultValue={props.options[0].value}
                 bordered={false}
                 onChange={props.callback}
                 options={[...props.options]}

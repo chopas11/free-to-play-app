@@ -10,9 +10,9 @@ export const fetchGames = (sort: string, platform: string, genre: string) => {
                 method: 'GET',
                 url: 'https://free-to-play-games-database.p.rapidapi.com/api/games',
                 params: {
-                    // platform: platform,
-                    // category: genre,
-                    // 'sort-by': sort
+                    platform: platform,
+                    'sort-by': sort,
+                    category: undefined
                 },
                 timeout: 5000,
                 headers: {
@@ -20,7 +20,9 @@ export const fetchGames = (sort: string, platform: string, genre: string) => {
                     'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
                 }
             };
-            // if (genre) options.params.category = genre;
+            if (genre) { // @ts-ignore
+                options.params.category = genre;
+            }
 
             const response = await axios.request(options)
             setTimeout(() => {

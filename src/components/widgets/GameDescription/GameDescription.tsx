@@ -39,11 +39,11 @@ const GameDescription: React.FC<GameDescriptionProps> = ({game}) => {
             <br/>
             <h2>Minimum System Requirements ({game?.platform})</h2>
             <GameParams params={[
-                {label: "OS", value: game?.minimum_system_requirements.os},
-                {label: "Processor", value: game?.minimum_system_requirements.processor},
-                {label: "Memory", value: game?.minimum_system_requirements.memory},
-                {label: "Graphics", value: game?.minimum_system_requirements.graphics},
-                {label: "Storage", value: game?.minimum_system_requirements.storage},
+                {label: "OS", value: game?.minimum_system_requirements?.os},
+                {label: "Processor", value: game?.minimum_system_requirements?.processor},
+                {label: "Memory", value: game?.minimum_system_requirements?.memory},
+                {label: "Graphics", value: game?.minimum_system_requirements?.graphics},
+                {label: "Storage", value: game?.minimum_system_requirements?.storage},
                 {label: "Additional Notes", value: "Specifications may change during development"},
             ]} rows={2} />
             <br/>

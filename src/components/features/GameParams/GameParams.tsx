@@ -16,7 +16,7 @@ const GameParams: React.FC<GameParamsProps> = ({params, rows}) => {
     return (
         <div className={s.game__params} style={{gridTemplateColumns: `repeat(${rows}, 1fr)`}}>
             {
-                params.map(item => <div className={s.game__params__item}>
+                params.map(item => <div key={item.label} className={s.game__params__item}>
                     <span>{item.label}</span>
                     <p>{item.value}</p>
                 </div>)

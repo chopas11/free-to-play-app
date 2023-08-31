@@ -2,6 +2,7 @@
 .card {
     background: #32383e;
     border-radius: 5px;
+    height: 100%;
 }
 
 .card__img {
